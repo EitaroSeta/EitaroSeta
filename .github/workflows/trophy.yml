@@ -20,8 +20,9 @@ jobs:
         uses: Erik-Donath/github-profile-trophy@feature/generate-svg
         with:
           username: EitaroSeta
-          output_path: trophy.svg
+          file: trophy.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          theme: flat
 
       - name: Commit trophy.svg
         run: |
