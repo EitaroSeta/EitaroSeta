@@ -40,4 +40,4 @@ Here are some ideas to get you started:
 ![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=EitaroSeta&theme=gruvbox&utcOffset=9)
 
 ## Trophy :trophy:
-[![trophy](https://github-profile-trophy.vercel.app/?username=EitaroSeta)](https://github.com/ryo-ma/github-profile-trophy)
+![trophy](./trophy.svg)
