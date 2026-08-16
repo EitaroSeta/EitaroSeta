@@ -3,8 +3,7 @@ name: Generate Trophy
 on:
   workflow_dispatch:
   schedule:
-    # 毎日 0:00 UTC = 日本時間 9:00
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * 0"
 
 permissions:
   contents: write
@@ -17,13 +16,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate GitHub Profile Trophy
-        uses: ryo-ma/github-profile-trophy@master
+      - name: Generate trophy
+        uses: Erik-Donath/github-profile-trophy@feature/generate-svg
         with:
           username: EitaroSeta
           output_path: trophy.svg
           token: ${{ secrets.GITHUB_TOKEN }}
-          theme: flat
 
       - name: Commit trophy.svg
         run: |
