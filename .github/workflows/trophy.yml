@@ -21,7 +21,7 @@ jobs:
         with:
           username: EitaroSeta
           file: trophy.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.TROPHY_TOKEN }}
           theme: flat
 
       - name: Commit trophy.svg
